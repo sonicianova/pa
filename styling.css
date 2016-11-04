@@ -1,0 +1,41 @@
+body {
+	font-family:Arial;
+}
+#mainContainer {
+	text-align:center;
+}
+#input {
+	border:1px solid black;
+	border-radius:5px;
+	padding:10px;
+	font-size:18px;
+	width:250px;
+}
+#reply {
+	font-size:36px;
+}
+#divider {
+	border:1px solid black;
+	width:400px;
+	height:1px;
+	background:black;
+	border-radius:10px;
+	margin:auto;
+}
+#version {
+	font-size:14px;
+}
+#header {
+	background: linear-gradient(#0051ff,#0048e1);
+	color:white;
+	padding:10px;
+	padding-left:20px;
+	position:fixed;
+	top:0;
+	left:-10px;
+	width:100%;
+}
+p {
+	position:absolute;
+	bottom:0;
+}
