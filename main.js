@@ -94,7 +94,7 @@ function eval() {
 				document.getElementById("input").value = document.getElementById("input").value.substring(7);
 				window.open("https://" + document.getElementById("input").value);
 				textSize(24);
-				tell("The website has been launched. If it did not load successfully, try typing in http:// in front of the url or typing in the complete url. The website url might also be invalid.");
+				tell("The website has been launched. If it did not load successfully, try not typing http:// or www., as the name of the website and anything after that (i.e. .com) is all that is required.");
 			} else {
 				//If a command is unidentified, this script will run.
 				textSize(24);
