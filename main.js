@@ -45,7 +45,7 @@ function eval() {
 		//Help 1
 		case "help":
 			textSize(24);
-			tell("Help Pg. 1/2<br>alculator - Launches the Google calculator.<br>email - Loads your email.<br>help [1-2] - Shows list of possible commands.");
+			tell("Help Pg. 1/2<br>calculator - Launches the Google calculator.<br>email - Loads your email.<br>help [1-2] - Shows list of possible commands.");
 			break;
 		//Help 2
 		case "help 2":
@@ -92,7 +92,7 @@ function eval() {
 			if (document.getElementById("input").value.substring(0,6) === "launch") {
 				//This will launch a website by detecting if the first 6 letters are launch, then it deletes those letters and uploads the rest in a new tab as a url.
 				document.getElementById("input").value = document.getElementById("input").value.substring(7);
-				window.open(document.getElementById("input").value);
+				window.open("https://" + document.getElementById("input").value);
 				textSize(24);
 				tell("The website has been launched. If it did not load successfully, try typing in http:// in front of the url or typing in the complete url. The website url might also be invalid.");
 			} else {
