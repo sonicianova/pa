@@ -102,7 +102,7 @@ function eval() {
 				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.");
 			} else if (document.getElementById("input").value.substring(0,3) === "www") {
 				//This will launch any url that is put into the system regardless of whether it is http or https and will usually load as http.
-				window.open(document.getElementById("input").value);
+				window.open("https://" + document.getElementById("input").value);
 				textSize(24);
 				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.");
 			} else {
