@@ -99,7 +99,7 @@ function eval() {
 				//This will launch any url that is put into the system.
 				window.open(document.getElementById("input").value);
 				textSize(24);
-				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.);
+				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.");
 			} else {
 				//If a command is unidentified, this script will run.
 				textSize(24);
