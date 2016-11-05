@@ -50,7 +50,7 @@ function eval() {
 		//Help 2
 		case "help 2":
 			textSize(24);
-			tell("Help Pg. 1/2<br>launch [url] - Quickly launches a .com website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!");
+			tell("Help Pg. 1/2<br>launch [url] - Quickly launches a .com website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!<br>sn - Loads the SoniciaNova webpage. These people are responsible for me, your assistant, so be nice and check it out!");
 			break;
 		//Launches the calculator
 		case "calculator":
@@ -88,6 +88,10 @@ function eval() {
 				tell("A wife is like a hand grenade. Take off the ring and say goodbye to your house.");
 			}
 			break;
+		case "sn":
+			window.open("https://sonicianova.github.io/home");
+			textSize(24);
+			tell("Thanks for checking the site out! The new \"Press the Arrow\" game is pretty fun, I personally reccomend it!");
 		default:
 			if (document.getElementById("input").value.substring(0,6) === "launch") {
 				//This will launch a website by detecting if the first 6 letters are launch, then it deletes those letters and uploads the rest in a new tab as a url.
