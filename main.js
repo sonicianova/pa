@@ -92,6 +92,7 @@ function eval() {
 			window.open("https://sonicianova.github.io/home");
 			textSize(24);
 			tell("Thanks for checking the site out! The new \"Press the Arrow\" game is pretty fun, I personally reccomend it!");
+			break;
 		default:
 			if (document.getElementById("input").value.substring(0,6) === "launch") {
 				//This will launch a website by detecting if the first 6 letters are launch, then it deletes those letters and uploads the rest in a new tab as a url.
