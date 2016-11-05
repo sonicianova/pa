@@ -44,13 +44,13 @@ function eval() {
 			break;
 		//Help 1
 		case "help":
-			textSize(24);
+			textSize(20);
 			tell("Help Pg. 1/2<br>calculator - Launches the Google calculator.<br>email - Loads your email.<br>help [1-2] - Shows list of possible commands.");
 			break;
 		//Help 2
 		case "help 2":
 			textSize(24);
-			tell("Help Pg. 1/2<br>launch [url] - Launches a website.<br>tell a joke - Tells a funny joke!");
+			tell("Help Pg. 1/2<br>launch [url] - Quickly launches a .com website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!");
 			break;
 		//Launches the calculator
 		case "calculator":
@@ -92,9 +92,14 @@ function eval() {
 			if (document.getElementById("input").value.substring(0,6) === "launch") {
 				//This will launch a website by detecting if the first 6 letters are launch, then it deletes those letters and uploads the rest in a new tab as a url.
 				document.getElementById("input").value = document.getElementById("input").value.substring(7);
-				window.open("http://www." + document.getElementById("input").value);
+				window.open("http://www." + document.getElementById("input").value + ".com");
+				textSize(20);
+				tell("The website has been launched. If it did not load successfully, try not typing http://, www., or .com, as the name of the website and anything after that (i.e. .com) is all that is required.");
+			} else if (document.getElementById("input").value.substring(0,4) === "http") {
+				//This will launch any url that is put into the system.
+				window.open(document.getElementById("input").value);
 				textSize(24);
-				tell("The website has been launched. If it did not load successfully, try not typing http:// or www., as the name of the website and anything after that (i.e. .com) is all that is required.");
+				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.);
 			} else {
 				//If a command is unidentified, this script will run.
 				textSize(24);
