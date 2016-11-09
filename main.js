@@ -49,8 +49,8 @@ function eval() {
 			break;
 		//Help 2
 		case "help 2":
-			textSize(24);
-			tell("Help Pg. 1/2<br>launch [url] - Quickly launches a .com website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!<br>sn - Loads the SoniciaNova webpage. These people are responsible for me, your assistant, so be nice and check it out!");
+			textSize(20);
+			tell("Help Pg. 2/2<br>launch [url] - Quickly launches a .com website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!<br>sn - Loads the SoniciaNova webpage. These people are responsible for me, your assistant, so be nice and check it out!");
 			break;
 		//Launches the calculator
 		case "calculator":
