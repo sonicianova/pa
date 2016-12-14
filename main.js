@@ -45,21 +45,16 @@ function eval() {
 		//Help 1
 		case "help":
 			textSize(20);
-			tell("Help Pg. 1/2<br>calculator - Launches the Google calculator.<br>email - Loads your email.<br>help [1-2] - Shows list of possible commands.");
+			tell("Help Pg. 1/2<br>gmail - Loads your gmail.<br>help [1-2] - Shows list of possible commands.<br>launch [url] - Launches a .com website (ex. launch google) More sophisticated urls can be typed directly into the text field.");
 			break;
 		//Help 2
 		case "help 2":
 			textSize(20);
-			tell("Help Pg. 2/2<br>launch [url] - Quickly launches a \"http://www.example.com/\" website when you type in the name of the website i.e launch google. More sophisticated urls can be typed directly into the text field.<br>tell a joke - Tells a funny joke!<br>sn - Loads the SoniciaNova webpage. These people are responsible for me, your assistant, so be nice and check it out!");
-			break;
-		//Launches the calculator
-		case "calculator":
-			tell("The calculator has launched.");
-			window.open("https://www.google.com/webhp?sourceid=chrome-instant&rlz=1C1NDCM_enUS717US717&ion=1&espv=2&ie=UTF-8#q=calculator");
+			tell("Help Pg. 2/2<br>tell a joke - Tells a funny joke!<br>sn - Loads the SoniciaNova webpage. These people are responsible for me, your assistant, so be nice and check it out!");
 			break;
 		//Launches Gmail. If someone is not signed in google will redirect to the sign-in page, so no worries here.
-		case "email":
-			tell("Email successfully launched.");
+		case "gmail":
+			tell("Gmail successfully launched.");
 			window.open("http://www.gmail.com/");
 			break;
 		//Tells a random joke. There are 10 jokes total.
