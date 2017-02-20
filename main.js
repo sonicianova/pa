@@ -54,7 +54,7 @@ function eval() {
 			break;
 		//Launches Gmail. If someone is not signed in google will redirect to the sign-in page, so no worries here.
 		case "gmail":
-			tell("Gmail successfully launched.");
+			tell("I have opened your gmail.");
 			window.open("http://www.gmail.com/");
 			break;
 		//Tells a random joke. There are 10 jokes total.
@@ -94,23 +94,23 @@ function eval() {
 				document.getElementById("input").value = document.getElementById("input").value.substring(7);
 				window.open("http://www." + document.getElementById("input").value + ".com");
 				textSize(20);
-				tell("The website has been launched. If it did not load successfully, try not typing http://, www., or .com, as the name of the website and anything after that (i.e. .com) is all that is required.");
+				tell("I have opened the website " + document.getElementById("input").value + ".");
 			} else if (document.getElementById("input").value.substring(0,4) === "http") {
 				//This will launch any url that is put into the system.
 				window.open(document.getElementById("input").value);
 				textSize(24);
-				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.");
+				tell("I have launched the website.");
 			} else if (document.getElementById("input").value.substring(0,3) === "www") {
 				//This will launch any url that is put into the system regardless of whether it is http or https and will usually load as http.
 				window.open("https://" + document.getElementById("input").value);
 				textSize(24);
-				tell("The website url has been launched. If it did not load successfully, double check that the url is correctly typed in.");
+				tell("I have launched the website.");
 			} else {
 				//If a command is unidentified, this script will run.
 				textSize(24);
 				document.getElementById("input").value = document.getElementById("input").value.replace(" ", "+");
 				window.open("https://www.google.com/#q=" + document.getElementById("input").value)
-				tell("You have entered an unknown command. Type help to see a list of commands, or try re-typing your command in lowercase. Your input has been Googled if that was your intent.");
+				tell("I don't understand what you just said. Type help for a list of things I can do.");
 			}
 	}
 	//Clears the input field.
