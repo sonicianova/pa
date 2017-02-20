@@ -89,8 +89,12 @@ function eval() {
 			tell("Thanks for checking the site out! The new \"Press the Arrow\" game is pretty fun, I personally reccomend it!");
 			break;
 		case "solve my homework":
-			textSize(24);
-			tell("Aw HAIL naw!");
+			textSize(28);
+			tell("Aw HELL naw!");
+			break;
+		case "do my homework":
+			textSize(28);
+			tell("Aw HELL naw!");
 			break;
 		default:
 			if (document.getElementById("input").value.substring(0,6) === "launch") {
